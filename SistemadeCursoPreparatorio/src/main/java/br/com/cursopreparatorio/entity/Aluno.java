@@ -20,7 +20,8 @@ import javax.persistence.ManyToOne;
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 		private Integer id;
 		private String nome;
-		
+		private String email;
+		private String endereço;
 		
 		
 		@ManyToOne
@@ -68,6 +69,18 @@ import javax.persistence.ManyToOne;
 		}
 		public void setDisciplinas(List<Disciplina> disciplinas) {
 			this.disciplinas = disciplinas;
+		}
+		public String getEmail() {
+			return email;
+		}
+		public void setEmail(String email) {
+			this.email = email;
+		}
+		public String getEndereço() {
+			return endereço;
+		}
+		public void setEndereço(String endereço) {
+			this.endereço = endereço;
 		}
 		
 		
