@@ -20,7 +20,7 @@ public class Turma {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
 	private String nomedaturma;
-	
+	private Integer numerodaturma;
 	
 	
 	
